@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.hero {
+  background: linear-gradient(135deg, #ffc9e8, #e9e0ff, #dff5ff);
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 4px solid #ffc9e8;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #5a3c57;
+}
+
+.hero nav {
+  margin-top: 1rem;
+}
+
+.hero nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5a3c57;
+  font-weight: bold;
+}
+
+/* SEÇÕES */
+section {
+  padding: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #a14d7a;
+}
+
+/* Cards */
+.card, .gp-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Grid calendário */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gp-card {
+  flex: 1 1 30%;
+  text-align: center;
+  font-size: 1rem;
+  background: #ffeaf5;
+}
+
+/* Standings */
+.standings .tables {
+  display: flex;
+  justify-content: space-around;
+}
+
+.standings ol {
+  list-style: decimal inside;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #ffc9e8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #5a3c57;
+}
