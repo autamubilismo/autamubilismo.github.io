@@ -2,10 +2,85 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Site no GitHub Pages</title>
+  <title>F1 Season Hub 🎀</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-  <h1>🎀 Bem-vindo ao meu site!</h1>
-  <p>Esse é meu primeiro teste no GitHub Pages.</p>
+<body>
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>F1 Season Hub 🎀</h1>
+    <p>A temporada de Fórmula 1 explicada de um jeito simples, bonito e organizado.</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Circuitos</a>
+      <a href="#">Pilotos</a>
+      <a href="#">Temporada</a>
+      <a href="#">Glossário</a>
+    </nav>
+  </header>
+
+  <!-- PRÓXIMA CORRIDA -->
+  <section class="next-race">
+    <h2>🔜 Próxima Corrida</h2>
+    <div class="card">
+      <h3>🇯🇵 GP do Japão – Suzuka</h3>
+      <p>🗓️ 12/10/2025 – 02h (BR)</p>
+      <p>⏳ Contagem regressiva: <span id="countdown">09d 13h 22m</span></p>
+      <div class="buttons">
+        <a href="#">📍 Ver Circuito</a>
+        <a href="#">📺 Como assistir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDÁRIO -->
+  <section class="calendar">
+    <h2>📅 Calendário da Temporada</h2>
+    <div class="grid">
+      <div class="gp-card">🇦🇺 Austrália – 15/03 ✅</div>
+      <div class="gp-card">🇮🇹 Itália – 07/09 ✅</div>
+      <div class="gp-card">🇯🇵 Japão – 12/10 🔜</div>
+    </div>
+  </section>
+
+  <!-- CLASSIFICAÇÃO -->
+  <section class="standings">
+    <h2>🏎️ Classificação Atual</h2>
+    <div class="tables">
+      <div>
+        <h3>Pilotos</h3>
+        <ol>
+          <li>Verstappen – 325 pts</li>
+          <li>Leclerc – 290 pts</li>
+          <li>Hamilton – 270 pts</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Construtores</h3>
+        <ol>
+          <li>Red Bull – 550 pts</li>
+          <li>Ferrari – 520 pts</li>
+          <li>Mercedes – 490 pts</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIGOS -->
+  <section class="articles">
+    <h2>📰 Artigos úteis</h2>
+    <ul>
+      <li><a href="#">O que é DRS e por que importa?</a></li>
+      <li><a href="#">Entenda o undercut em 2 minutos</a></li>
+      <li><a href="#">Guia rápido de pontos da temporada</a></li>
+      <li><a href="#">Glossário de F1 para iniciantes</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Feito por fãs, para fãs ✨</p>
+    <p><a href="#">Sobre</a> | <a href="#">Contato</a> | <a href="#">Créditos</a></p>
+  </footer>
 </body>
 </html>
