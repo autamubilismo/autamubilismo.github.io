@@ -1,86 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>F1 Season Hub 🎀</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>autamubilismo — blog da Tamu</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="F1 descomplicada, estética girlie e conteúdo útil. O blog pessoal da Tamu." />
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="hero">
-    <h1>F1 Season Hub 🎀</h1>
-    <p>A temporada de Fórmula 1 explicada de um jeito simples, bonito e organizado.</p>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Circuitos</a>
-      <a href="#">Pilotos</a>
-      <a href="#">Temporada</a>
-      <a href="#">Glossário</a>
-    </nav>
+  <!-- Skip link -->
+  <a class="skip-to-content" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">
+        <span class="logo-mark" aria-hidden="true">🏁</span>
+        <span class="logo-text">autamubilismo</span>
+      </a>
+      <nav class="main-nav" aria-label="menu principal">
+        <a href="#">Home</a>
+        <a href="#">Corridas</a>
+        <a href="#">Explicando F1</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Pessoal</a>
+        <a href="#">Glossário</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- PRÓXIMA CORRIDA -->
-  <section class="next-race">
-    <h2>🔜 Próxima Corrida</h2>
-    <div class="card">
-      <h3>🇯🇵 GP do Japão – Suzuka</h3>
-      <p>🗓️ 12/10/2025 – 02h (BR)</p>
-      <p>⏳ Contagem regressiva: <span id="countdown">09d 13h 22m</span></p>
-      <div class="buttons">
-        <a href="#">📍 Ver Circuito</a>
-        <a href="#">📺 Como assistir</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>F1 descomplicada, bonita e útil ✨</h1>
+        <p>Oi, eu sou a <strong>Tamu</strong>. No <em>autamubilismo</em> você encontra guias práticos, análises de corridas e explicações sem jargão — tudo com estética girlie.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#">Ver posts recentes</a>
+          <a class="btn btn-ghost" href="#">Sobre o blog</a>
+        </div>
       </div>
+      <!-- “Imagem” hero: gradient decorativo (sem precisar de arquivo) -->
+      <div class="hero-art" role="img" aria-label="Ilustração abstrata de pista de corrida em cores pastel"></div>
     </div>
   </section>
 
-  <!-- CALENDÁRIO -->
-  <section class="calendar">
-    <h2>📅 Calendário da Temporada</h2>
-    <div class="grid">
-      <div class="gp-card">🇦🇺 Austrália – 15/03 ✅</div>
-      <div class="gp-card">🇮🇹 Itália – 07/09 ✅</div>
-      <div class="gp-card">🇯🇵 Japão – 12/10 🔜</div>
-    </div>
-  </section>
+  <main id="conteudo" class="container">
 
-  <!-- CLASSIFICAÇÃO -->
-  <section class="standings">
-    <h2>🏎️ Classificação Atual</h2>
-    <div class="tables">
-      <div>
-        <h3>Pilotos</h3>
-        <ol>
-          <li>Verstappen – 325 pts</li>
-          <li>Leclerc – 290 pts</li>
-          <li>Hamilton – 270 pts</li>
-        </ol>
+    <!-- Sidebar utilitária (mobile vira bloco) -->
+    <aside class="side-cards">
+      <article class="card next-race" aria-labelledby="proxima-corrida">
+        <h2 id="proxima-corrida">Próxima corrida</h2>
+        <p class="race-title">🇯🇵 GP do Japão — Suzuka</p>
+        <p class="race-meta">12/10/2025 • 02:00 (horário BR)</p>
+        <p class="race-count">⏳ Em: <span data-countdown>09d 13h 22m</span></p>
+        <div class="card-actions">
+          <a class="btn btn-small" href="#">Guia do circuito</a>
+          <a class="btn btn-small btn-ghost" href="#">Como assistir</a>
+        </div>
+      </article>
+
+      <article class="card mini-calendar" aria-labelledby="calendario">
+        <h2 id="calendario">Calendário da temporada</h2>
+        <ul class="mini-list">
+          <li>🇦🇺 Austrália — 15/03 <span class="tag done">concluído</span></li>
+          <li>🇮🇹 Itália — 07/09 <span class="tag done">concluído</span></li>
+          <li>🇯🇵 Japão — 12/10 <span class="tag next">próxima</span></li>
+        </ul>
+        <a class="link" href="#">Ver calendário completo</a>
+      </article>
+
+      <article class="card glossary" aria-labelledby="glossario">
+        <h2 id="glossario">Glossário girlie</h2>
+        <p>DRS? Undercut? Parc fermé? Explicações rápidas, diretas e sem complicação.</p>
+        <a class="btn btn-small" href="#">Abrir glossário</a>
+      </article>
+    </aside>
+
+    <!-- Posts em destaque -->
+    <section class="section" aria-labelledby="destaques">
+      <div class="section-head">
+        <h2 id="destaques">Posts em destaque</h2>
+        <a class="link" href="#">Ver todos</a>
       </div>
-      <div>
-        <h3>Construtores</h3>
-        <ol>
-          <li>Red Bull – 550 pts</li>
-          <li>Ferrari – 520 pts</li>
-          <li>Mercedes – 490 pts</li>
-        </ol>
+
+      <div class="post-grid">
+        <!-- Card 1 -->
+        <article class="post-card">
+          <a class="post-thumb" href="#" aria-label="Abrir post Guia rápido do GP do Japão">
+            <div class="thumb thumb-1"></div>
+          </a>
+          <div class="post-meta">
+            <span class="pill">Corridas</span>
+          </div>
+          <h3 class="post-title"><a href="#">Guia rápido do GP do Japão 🇯🇵</a></h3>
+          <p class="post-excerpt">Mapa do traçado, pontos-chave e horários BR. Tudo que importa, em 3 minutos.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="post-card">
+          <a class="post-thumb" href="#" aria-label="Abrir post O que é undercut">
+            <div class="thumb thumb-2"></div>
+          </a>
+          <div class="post-meta">
+            <span class="pill pill-edu">Explicando F1</span>
+          </div>
+          <h3 class="post-title"><a href="#">O que é undercut (e quando funciona)</a></h3>
+          <p class="post-excerpt">Estratégia de parada para ganhar pista. Exemplos práticos e por que nem sempre dá certo.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="post-card">
+          <a class="post-thumb" href="#" aria-label="Abrir post Checklist de transmissão">
+            <div class="thumb thumb-3"></div>
+          </a>
+          <div class="post-meta">
+            <span class="pill pill-tools">Ferramentas</span>
+          </div>
+          <h3 class="post-title"><a href="#">Checklist de corrida: o que ver na transmissão</a></h3>
+          <p class="post-excerpt">DRS, setores roxos, âncoras do pit wall e rádios — um guia para assistir com olhar apurado.</p>
+        </article>
       </div>
+    </section>
+
+    <!-- Categorias (blocos) -->
+    <section class="section cats" aria-labelledby="cats">
+      <div class="section-head">
+        <h2 id="cats">Categorias</h2>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-card" href="#">
+          <h3>🏁 Corridas</h3>
+          <p>Pré/pós corrida, estratégias e contexto útil.</p>
+        </a>
+        <a class="cat-card" href="#">
+          <h3>👩‍💻 Explicando F1</h3>
+          <p>Conceitos sem jargão, bonitos e diretos.</p>
+        </a>
+        <a class="cat-card" href="#">
+          <h3>🌸 Lifestyle</h3>
+          <p>Viagens, cultura visual da F1, playlists focadas.</p>
+        </a>
+        <a class="cat-card" href="#">
+          <h3>✍️ Pessoal</h3>
+          <p>Crônicas e a tua voz olhando pro esporte.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" aria-labelledby="news">
+      <div class="newsletter-inner">
+        <div>
+          <h2 id="news">Newsletter semanal</h2>
+          <p>Receba um resumo útil e bonito da F1 no seu e-mail. Sem spam.</p>
+        </div>
+        <form class="form-inline" action="#" method="post">
+          <label class="sr-only" for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seu@email.com" required>
+          <button class="btn btn-primary" type="submit">Assinar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <p>Feito por fãs, para fãs. 💖 <strong>autamubilismo</strong> © 2025</p>
+      <nav aria-label="rodapé">
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Créditos</a>
+        <a href="#">Política</a>
+      </nav>
     </div>
-  </section>
-
-  <!-- ARTIGOS -->
-  <section class="articles">
-    <h2>📰 Artigos úteis</h2>
-    <ul>
-      <li><a href="#">O que é DRS e por que importa?</a></li>
-      <li><a href="#">Entenda o undercut em 2 minutos</a></li>
-      <li><a href="#">Guia rápido de pontos da temporada</a></li>
-      <li><a href="#">Glossário de F1 para iniciantes</a></li>
-    </ul>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Feito por fãs, para fãs ✨</p>
-    <p><a href="#">Sobre</a> | <a href="#">Contato</a> | <a href="#">Créditos</a></p>
   </footer>
 </body>
 </html>
