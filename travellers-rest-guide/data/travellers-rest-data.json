@@ -1,0 +1,43 @@
+{
+  "generated": "2026-06-15",
+  "note": "Arquivo de dados legível do Travellers Rest Guide. O site usa data.js para carregar no navegador; este JSON fica aqui para edição/consulta no GitHub.",
+  "sections": ["tools", "vendors", "locations", "materials", "fish", "seeds", "food", "brewing", "quests", "sources"],
+  "tools": [
+    {"name":"Bucket","tier":"Basic","recipe":"Tutorial/basic tool","use":"Draw water from the well; refill systems and recipes."},
+    {"name":"Mop","tier":"Basic","recipe":"Tutorial/basic tool","use":"Clean messes; test on fragile obstacles like boxes, barrels and vases."},
+    {"name":"Copper Pickax","tier":"Copper","recipe":"25 Copper Bar + 35 Wooden Planks","use":"Mine metal ores and stones."},
+    {"name":"Iron Pickax","tier":"Iron","recipe":"Copper Pickax + 30 Iron Bar + 60 Wooden Planks","use":"Recommended first upgrade for Ore Galore progression."},
+    {"name":"Cobalt Pickax","tier":"Cobalt","recipe":"Iron Pickax + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced mining and cobalt progression."},
+    {"name":"Iron Axe","tier":"Iron","recipe":"Copper Axe + 30 Iron Bar + 60 Wooden Planks","use":"Second recommended upgrade for terrain cleanup."},
+    {"name":"Cobalt Axe","tier":"Cobalt","recipe":"Iron Axe + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced tree and obstacle clearing."}
+  ],
+  "vendors": [
+    {"name":"Woody","shop":"Carpenter / Sawmill","hours":"09:00-22:00, Monday-Saturday","sells":"Blueprints, recipes and ready-made items for editing the tavern."},
+    {"name":"Hallmund","shop":"Tool Shop / Blacksmith","hours":"08:40-22:00, Monday-Saturday","sells":"Copper tools and upgrades to Iron/Cobalt tools."},
+    {"name":"Kujaku","shop":"Fishmonger","hours":"08:15-22:00, Monday-Saturday","sells":"Fish, including Oily Fish options depending on stock."},
+    {"name":"Lia","shop":"Seed Shop","hours":"08:10-22:00, Monday-Saturday","sells":"Seeds and sprouts."},
+    {"name":"Nessy","shop":"The Burrow","hours":"09:00-22:00, Monday-Saturday","sells":"Pet items, Jacky quest and adoption path."}
+  ],
+  "locations": [
+    {"name":"The Mine","type":"Ore Galore unlockable area","notes":"Unlock after freeing Ferro. Daily regenerating mine floors with ores and chests."},
+    {"name":"The Burrow","type":"Animal rescue shelter","notes":"Markus and Nessy; Jacky quest; cat adoption path."},
+    {"name":"Beach","type":"Saltwater fishing","notes":"Saltwater fish and beach forageables."},
+    {"name":"River Bank","type":"Freshwater fishing","notes":"Freshwater fish location, useful for Oily Fish candidates."}
+  ],
+  "materials": [
+    {"name":"Iron Bar","group":"Metal","get":"Smelter","notes":"Core material for iron upgrades."},
+    {"name":"Cobalt Bar","group":"Metal","get":"Processed from Cobalt Ore","notes":"Needed for cobalt tools."},
+    {"name":"Queen Bee","group":"Beekeeping","get":"Rare drop from mature trees outside tavern","notes":"Used for Apiary."},
+    {"name":"Honey","group":"Beekeeping","get":"Apiary or limited vendors","notes":"Cooking and brewing ingredient."}
+  ],
+  "fish": [
+    {"name":"Oily Fish","type":"Ingredient group","get":"Fishing or Kujaku","notes":"Includes Trout, Piranha, Salmon, Eel, Anchovy, Gilt-Head Bream, Sea Bass and Sardine."},
+    {"name":"Anchovy","type":"Oily Fish","get":"Beach / saltwater","notes":"Good early target if season matches."},
+    {"name":"Salmon","type":"Oily Fish","get":"Freshwater fishing","notes":"Useful for Oily Fish recipes."},
+    {"name":"Trout","type":"Oily Fish","get":"Freshwater fishing","notes":"Useful early Oily Fish candidate."}
+  ],
+  "quests": [
+    {"name":"Unlock the Mine / Ferro","notes":"Reach hot springs, use hot water to free Ferro, then mine unlocks."},
+    {"name":"Jacky the Cat","notes":"Talk to Nessy at The Burrow; find Jacky under a cart, in a barrel, then in a tree behind a bench."}
+  ]
+}
