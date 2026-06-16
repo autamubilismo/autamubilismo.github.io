@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#3a2315" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="TR Guide" />
+  <title>Travellers Rest Guide</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon.svg" />
+  <link rel="icon" href="icons/icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="wood-top">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">🍺</div>
+        <div class="brand-title"><h1>Travellers Rest Guide</h1><small>Livro-caixa da taverneira de Rilia</small></div>
+        <button class="round-btn" id="themeBtn" aria-label="Alternar brilho">🕯️</button>
+      </div>
+      <form class="searchbar" id="searchForm">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="Buscar itens, receitas, NPCs, salas..." />
+        <select id="categorySelect"><option value="all">Todos</option></select>
+      </form>
+    </header>
+    <div class="status-strip"><div>🌼 Primavera</div><div>📅 Dia 12</div><div>☀️ Ano 1</div></div>
+    <main>
+      <section id="home" class="page"></section>
+      <section id="guia" class="page"></section>
+      <section id="database" class="page"></section>
+      <section id="rilia" class="page"></section>
+      <section id="planner" class="page"></section>
+      <section id="fontes" class="page"></section>
+    </main>
+    <p class="site-footer">Feito para abrir no celular como um app. Pergaminho, ledger e caos de taverna sob controle. 🕯️</p>
+    <nav class="app-nav" aria-label="Navegação principal">
+      <a href="#home" class="active"><span>🏠</span>Home</a><a href="#guia"><span>📖</span>Guia</a><a href="#database"><span>📦</span>Database</a><a href="#rilia"><span>🏘️</span>Rilia</a><a href="#planner"><span>📅</span>Planner</a>
+    </nav>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost')) navigator.serviceWorker.register('./sw.js').catch(()=>{});</script>
+</body>
+</html>
