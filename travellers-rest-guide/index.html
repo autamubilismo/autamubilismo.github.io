@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="icons/icon.svg" />
   <link rel="icon" href="icons/icon.svg" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-tabs.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -32,6 +33,7 @@
       <section id="home" class="page"></section>
       <section id="guia" class="page"></section>
       <section id="database" class="page"></section>
+      <section id="pesca" class="page"></section>
       <section id="receitas" class="page"></section>
       <section id="bebidas" class="page"></section>
       <section id="rilia" class="page"></section>
@@ -40,13 +42,14 @@
     </main>
     <p class="site-footer">Feito para abrir no celular como um app. Pergaminho, ledger e caos de taverna sob controle. 🕯️</p>
     <nav class="app-nav" aria-label="Navegação principal">
-      <a href="#home" class="active"><span>🏠</span>Home</a><a href="#guia"><span>📖</span>Guia</a><a href="#database"><span>📦</span>Base</a><a href="#receitas"><span>🍲</span>Receitas</a><a href="#bebidas"><span>🍺</span>Bebidas</a>
+      <a href="#home" class="active"><span>🏠</span>Home</a><a href="#guia"><span>📖</span>Guia</a><a href="#database"><span>📦</span>Base</a><a href="#pesca"><span>🐟</span>Pesca</a><a href="#receitas"><span>🍲</span>Receitas</a><a href="#bebidas"><span>🍺</span>Bebidas</a>
     </nav>
   </div>
   <script src="data.js"></script>
   <script src="data-extra.js"></script>
   <script src="data-fishing.js"></script>
   <script src="app.js"></script>
+  <script src="tab-pesca.js"></script>
   <script>if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost')) navigator.serviceWorker.register('./sw.js').catch(()=>{});</script>
 </body>
 </html>
