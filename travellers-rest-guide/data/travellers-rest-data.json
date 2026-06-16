@@ -1,43 +1,64 @@
 {
-  "generated": "2026-06-15",
-  "note": "Arquivo de dados legível do Travellers Rest Guide. O site usa data.js para carregar no navegador; este JSON fica aqui para edição/consulta no GitHub.",
+  "generated": "2026-06-16",
+  "note": "Arquivo de dados legível do Travellers Rest Guide. O site usa ../data.js para carregar no navegador; este JSON fica aqui para edição/consulta no GitHub.",
   "sections": ["tools", "vendors", "locations", "materials", "fish", "seeds", "food", "brewing", "quests", "sources"],
-  "tools": [
-    {"name":"Bucket","tier":"Basic","recipe":"Tutorial/basic tool","use":"Draw water from the well; refill systems and recipes."},
-    {"name":"Mop","tier":"Basic","recipe":"Tutorial/basic tool","use":"Clean messes; test on fragile obstacles like boxes, barrels and vases."},
-    {"name":"Copper Pickax","tier":"Copper","recipe":"25 Copper Bar + 35 Wooden Planks","use":"Mine metal ores and stones."},
-    {"name":"Iron Pickax","tier":"Iron","recipe":"Copper Pickax + 30 Iron Bar + 60 Wooden Planks","use":"Recommended first upgrade for Ore Galore progression."},
-    {"name":"Cobalt Pickax","tier":"Cobalt","recipe":"Iron Pickax + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced mining and cobalt progression."},
-    {"name":"Iron Axe","tier":"Iron","recipe":"Copper Axe + 30 Iron Bar + 60 Wooden Planks","use":"Second recommended upgrade for terrain cleanup."},
-    {"name":"Cobalt Axe","tier":"Cobalt","recipe":"Iron Axe + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced tree and obstacle clearing."}
-  ],
-  "vendors": [
-    {"name":"Woody","shop":"Carpenter / Sawmill","hours":"09:00-22:00, Monday-Saturday","sells":"Blueprints, recipes and ready-made items for editing the tavern."},
-    {"name":"Hallmund","shop":"Tool Shop / Blacksmith","hours":"08:40-22:00, Monday-Saturday","sells":"Copper tools and upgrades to Iron/Cobalt tools."},
-    {"name":"Kujaku","shop":"Fishmonger","hours":"08:15-22:00, Monday-Saturday","sells":"Fish, including Oily Fish options depending on stock."},
-    {"name":"Lia","shop":"Seed Shop","hours":"08:10-22:00, Monday-Saturday","sells":"Seeds and sprouts."},
-    {"name":"Nessy","shop":"The Burrow","hours":"09:00-22:00, Monday-Saturday","sells":"Pet items, Jacky quest and adoption path."}
-  ],
-  "locations": [
-    {"name":"The Mine","type":"Ore Galore unlockable area","notes":"Unlock after freeing Ferro. Daily regenerating mine floors with ores and chests."},
-    {"name":"The Burrow","type":"Animal rescue shelter","notes":"Markus and Nessy; Jacky quest; cat adoption path."},
-    {"name":"Beach","type":"Saltwater fishing","notes":"Saltwater fish and beach forageables."},
-    {"name":"River Bank","type":"Freshwater fishing","notes":"Freshwater fish location, useful for Oily Fish candidates."}
-  ],
   "materials": [
+    {
+      "name": "Chicken Coop / Galinheiro",
+      "group": "Construção / Farm Building / Animal Building",
+      "aliases": ["galinheiro", "coop", "chicken coop", "galinha", "galinhas"],
+      "built_by": "Buzz",
+      "build_cost": "25 Wooden Planks + 15 Iron Nails + 10 Mortar + 15 Gold",
+      "capacity": "Level 1: 4 chickens; Level 2: 5 chickens; Level 3: 6 chickens",
+      "upgrades": "Level 2: 30 Wooden Planks + 20 Iron Nails + 12 Mortar + 35 Gold. Level 3: 50 Wooden Planks + 30 Iron Nails + 15 Mortar + 50 Gold.",
+      "notes": "Requires items in inventory when placing the order. Max 2 coops. Chickens are bought from Holly after construction. Eggs are collected automatically in the coop. Feed chickens with Seeds Mix and fill trough with Bucket with Water."
+    },
+    {
+      "name": "Barn / Celeiro",
+      "group": "Construção / Farm Building / Animal Building",
+      "aliases": ["celeiro", "barn", "vaca", "porco", "ovelha"],
+      "built_by": "Buzz",
+      "total_fully_upgraded_cost": "135 Gold + 190 Wooden Planks + 135 Iron Nails + 60 Mortar",
+      "capacity": "Starts with 4 stalls; upgrades up to 8 stalls",
+      "notes": "Only 1 Barn can be built per farm. Houses cows, sheep and pigs. Initial construction takes 3 days."
+    },
+    {"name":"Chicken / Galinha","group":"Animal","get":"Buy from Holly after Chicken Coop is built.","notes":"Produces Egg every 2 days at maximum growth rate. Place it in the coop using Decoration Mode."},
+    {"name":"Egg / Ovo","group":"Animal Product / Ingrediente","get":"Chicken Coop collects eggs automatically.","notes":"Chickens produce 1 Egg every 2 days at maximum growth rate."},
+    {"name":"Seeds Mix / Mistura de Sementes","group":"Animal Food","get":"Forage Table / crafting animal food.","notes":"Chicken food."},
+    {"name":"Hay / Feno","group":"Animal Food","get":"Forage Table / animal feed crafting.","notes":"Cows and sheep eat Hay."},
+    {"name":"Leftovers / Restos","group":"Animal Food","get":"Forage Table / animal feed crafting.","notes":"Pigs eat Leftovers."},
     {"name":"Iron Bar","group":"Metal","get":"Smelter","notes":"Core material for iron upgrades."},
     {"name":"Cobalt Bar","group":"Metal","get":"Processed from Cobalt Ore","notes":"Needed for cobalt tools."},
-    {"name":"Queen Bee","group":"Beekeeping","get":"Rare drop from mature trees outside tavern","notes":"Used for Apiary."},
-    {"name":"Honey","group":"Beekeeping","get":"Apiary or limited vendors","notes":"Cooking and brewing ingredient."}
+    {"name":"Wooden Planks","group":"Wood","get":"Sawmill/wood processing","notes":"Needed for tool upgrades, Chicken Coop, Barn and construction."},
+    {"name":"Iron Nails","group":"Metal / Construction","get":"Crafting/blacksmithing resource","notes":"Needed for Chicken Coop and Barn construction/upgrades."},
+    {"name":"Mortar","group":"Stone / Construction","get":"Stone crafting/construction resource","notes":"Needed for Chicken Coop and Barn construction/upgrades."},
+    {"name":"Queen Bee / Abelha Rainha","group":"Beekeeping","get":"Rare drop from mature trees outside tavern","notes":"Used for Apiary."},
+    {"name":"Honey / Mel","group":"Beekeeping","get":"Apiary or limited vendors","notes":"Cooking and brewing ingredient."}
+  ],
+  "tools": [
+    {"name":"Iron Pickax / Picareta de Ferro","tier":"Iron","recipe":"Copper Pickax + 30 Iron Bar + 60 Wooden Planks","use":"Recommended first upgrade for Ore Galore progression."},
+    {"name":"Iron Axe / Machado de Ferro","tier":"Iron","recipe":"Copper Axe + 30 Iron Bar + 60 Wooden Planks","use":"Second recommended upgrade for terrain cleanup."},
+    {"name":"Cobalt Pickax / Picareta de Cobalto","tier":"Cobalt","recipe":"Iron Pickax + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced mining and cobalt progression."},
+    {"name":"Cobalt Axe / Machado de Cobalto","tier":"Cobalt","recipe":"Iron Axe + 45 Cobalt Bar + 40 Noble Wooden Planks","use":"Advanced tree and obstacle clearing."}
+  ],
+  "food": [
+    {"name":"Anchovies in Oil / Anchovas no Óleo","category":"Recipe • Ingredients include Oily Fish / Anchovy + Oil."},
+    {"name":"Fried Fish / Peixe Frito","category":"Recipe • Fish dish."},
+    {"name":"Roasted Fish / Peixe Assado","category":"Recipe • Fish dish."},
+    {"name":"Honey Flan / Pudim de Mel","category":"Recipe • Honey dessert."},
+    {"name":"Yogurt with Honey / Iogurte com Mel","category":"Recipe • Honey dairy recipe."}
   ],
   "fish": [
-    {"name":"Oily Fish","type":"Ingredient group","get":"Fishing or Kujaku","notes":"Includes Trout, Piranha, Salmon, Eel, Anchovy, Gilt-Head Bream, Sea Bass and Sardine."},
-    {"name":"Anchovy","type":"Oily Fish","get":"Beach / saltwater","notes":"Good early target if season matches."},
-    {"name":"Salmon","type":"Oily Fish","get":"Freshwater fishing","notes":"Useful for Oily Fish recipes."},
-    {"name":"Trout","type":"Oily Fish","get":"Freshwater fishing","notes":"Useful early Oily Fish candidate."}
+    {"name":"Oily Fish / Peixe Oleoso","type":"Ingredient group","get":"Fishing or Kujaku","notes":"Includes Trout, Piranha, Salmon, Eel, Anchovy, Gilt-Head Bream, Sea Bass and Sardine."}
   ],
   "quests": [
-    {"name":"Unlock the Mine / Ferro","notes":"Reach hot springs, use hot water to free Ferro, then mine unlocks."},
-    {"name":"Jacky the Cat","notes":"Talk to Nessy at The Burrow; find Jacky under a cart, in a barrel, then in a tree behind a bench."}
+    {"name":"Build Chicken Coop / Construir Galinheiro","notes":"Ask Buzz to build it. Keep 25 Wooden Planks, 15 Iron Nails, 10 Mortar and 15 Gold in inventory."},
+    {"name":"Buy Chicken / Comprar Galinha","notes":"After the Chicken Coop is complete, Holly sells chickens."},
+    {"name":"Chicken Care / Cuidar da Galinha","notes":"Place chicken in coop using Decoration Mode. Feed with Seeds Mix and fill trough with Bucket with Water."}
+  ],
+  "sources": [
+    {"label":"Travellers Rest Fandom Chicken Coop","url":"https://travellers-rest.fandom.com/wiki/Chicken_Coop","why":"Chicken Coop construction costs, capacities and upgrades."},
+    {"label":"Travellers Rest Fandom Animals","url":"https://travellers-rest.fandom.com/wiki/Animals","why":"Animal care, produce and assigning animals."},
+    {"label":"Travellers Rest Fandom Barn","url":"https://travellers-rest.fandom.com/wiki/Barn","why":"Barn construction, features and total upgraded cost."}
   ]
 }
