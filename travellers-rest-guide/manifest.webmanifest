@@ -1,0 +1,20 @@
+{
+  "name": "Travellers Rest Guide",
+  "short_name": "TR Guide",
+  "description": "Guia fan-made mobile-first para Travellers Rest, com database, planner e checklist.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#24140c",
+  "theme_color": "#3a2315",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
